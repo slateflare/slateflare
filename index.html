@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>SlateFlare - Landing Page Design</title>
+    <link rel="icon" type="image/svg" href="/public/favicon.svg" />
+  </head>
+  <body class="no-scrollbar">
+    <nav
+      class="relative flex justify-between px-4 lg:px-10 h-16 items-center glass"
+    >
+      <div class="cursor-pointer">
+        <a href="/index.html"
+          ><img src="./public/nav-logo.png" alt="logo" class="w-60"
+        /></a>
+      </div>
+
+      <div
+        class="dropdown-menu absolute left-0 top-16 z-50 w-full flex flex-col items-start gap-4 rounded-b-2xl max-lg:bg-[rgba(255,255,255,0.84)] max-lg:backdrop-blur-lg max-lg:border max-lg:border-[rgba(255,255,255,0.65)] max-lg:shadow-[0_8px_32px_rgba(31,38,135,0.08)] px-6 py-6 opacity-0 invisible -translate-y-4 transition-all duration-300 lg:visible lg:opacity-100 lg:translate-y-0 lg:static lg:w-auto lg:flex-row lg:items-center lg:gap-6 lg:bg-transparent lg:p-0 whitespace-nowrap"
+      >
+        <li class="list-none flex items-center justify-between w-full">
+          <a
+            class="hover:text-flare text-muted px-2 py-1 font-medium rounded"
+            href="#"
+            >Home</a
+          >
+        </li>
+        <li class="list-none flex items-center justify-between w-full">
+          <a
+            class="hover:text-flare text-muted px-2 py-1 font-medium rounded"
+            href="#"
+            >Services</a
+          >
+        </li>
+        <li class="list-none flex items-center justify-between w-full">
+          <a
+            class="hover:text-flare text-muted px-2 py-1 font-medium rounded"
+            href="#"
+            >About Us</a
+          >
+        </li>
+        <li class="list-none flex items-center justify-between w-full">
+          <a
+            class="hover:text-flare text-muted px-2 py-1 font-medium rounded"
+            href="#"
+            >Privicy Policy</a
+          >
+        </li>
+        <li class="list-none flex items-center justify-between w-full">
+          <a
+            class="bg-flare px-3 py-2 text-surface font-medium rounded hover:bg-flare-dark w-[45%] flex items-center justify-center lg:w-full"
+            href="#"
+            >Contact Us</a
+          >
+          <a
+            class="lg:hidden bg-flare px-3 py-2 text-surface font-medium rounded hover:bg-flare-dark w-[45%] flex items-center justify-center"
+            href="#"
+            >Get a Quote</a
+          >
+        </li>
+      </div>
+      <div class="lg:hidden">
+        <ion-icon
+          onclick="toggleMenu(this)"
+          name="menu"
+          class="text-3xl cursor-pointer"
+        ></ion-icon>
+      </div>
+    </nav>
+    <section
+      id="header"
+      class="flare-gradient min-h-150 flex flex-col justify-center gap-6 bg-red-300 items-center max-lg:px-4"
+    >
+      <h1 class="text-6xl max-lg:text-4xl text-center font-bold">
+        Websites that make <br />
+        your <span class="text-background">businesses</span> stand out.
+      </h1>
+      <p class="text-xs text-white text-center w-[70%] max-lg:w-full">
+        Fast, modern websites designed to turn visitors into enquiries, calls,
+        and customers.We build fast, modern websites for growing businesses.
+        Designed to look professional, build trust, and drive enquiries. Simple,
+        responsive, and built with your customers in mind. Your business
+        deserves a website that works.
+      </p>
+      <div class="flex items-center justify-center gap-4">
+        <button
+          class="bg-slate text-flare px-4 py-3 rounded-xl w-40 lg:w-60 hover:scale-105 transition-all duration-300 hover:text-background"
+        >
+          Get a Free Quote
+        </button>
+        <button
+          class="bg-slate text-flare px-4 py-3 rounded-xl w-40 lg:w-60 hover:scale-105 transition-all duration-300 hover:text-background"
+        >
+          Contact Us
+        </button>
+      </div>
+      <p class="text-[10px] text-text">
+        Get Your High Converting SEO Optimized Landing Page ASAP
+        <a href="#"
+          ><ion-icon name="arrow-forward" class="cursor-pointer"></ion-icon
+        ></a>
+      </p>
+    </section>
+    <section
+      id="services"
+      class="min-h-150 p-4 bg-background flex flex-col gap-6"
+    >
+      <div class="flex flex-col items-start justify-center">
+        <div
+          class="border-t-0 border-x-0 border-b-3 border-solid border-flare text-2xl font-semibold"
+        >
+          What We Do
+        </div>
+        <p class="text-sm font-medium">
+          Websites designed <br />to make
+          <span class="text-flare">businesses</span> stand out.
+        </p>
+      </div>
+      <div class="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-4">
+        <div
+          class="flex gap-4 items-center justify-between rounded hover:-translate-y-1 w-80 transition-all duration-300 border border-l-4 border-flare border-r-0 border-y-0 p-4 shadow-2xl"
+        >
+          <div
+            class="bg-flare font-bold h-8 w-8 rounded-full flex items-center justify-center text-background text-lg"
+          >
+            1
+          </div>
+          <div>
+            <h3 class="text-lg font-bold">Landing Pages</h3>
+            <p class="text-xs text-flare-dark">Turn visitors into enquiries.</p>
+          </div>
+          <ion-icon name="arrow-forward" class="cursor-pointer"></ion-icon>
+        </div>
+        <div
+          class="flex gap-4 items-center justify-between rounded hover:-translate-y-1 w-80 transition-all duration-300 border border-l-4 border-flare border-r-0 border-y-0 p-4 shadow-2xl"
+        >
+          <div
+            class="bg-flare font-bold h-8 w-8 rounded-full flex items-center justify-center text-background text-lg"
+          >
+            2
+          </div>
+          <div>
+            <h3 class="text-lg font-bold">Business Websites</h3>
+            <p class="text-xs text-flare-dark">
+              A professional home for your business.
+            </p>
+          </div>
+          <ion-icon name="arrow-forward" class="cursor-pointer"></ion-icon>
+        </div>
+        <div
+          class="flex gap-4 items-center justify-between rounded hover:-translate-y-1 w-80 transition-all duration-300 border border-l-4 border-flare border-r-0 border-y-0 p-4 shadow-2xl"
+        >
+          <div
+            class="bg-flare font-bold h-8 w-8 rounded-full flex items-center justify-center text-background text-lg"
+          >
+            3
+          </div>
+          <div>
+            <h3 class="text-lg font-bold">Website Redesign</h3>
+            <p class="text-xs text-flare-dark">
+              Give your existing site a fresh start
+            </p>
+          </div>
+          <ion-icon name="arrow-forward" class="cursor-pointer"></ion-icon>
+        </div>
+        <div
+          class="flex gap-4 items-center justify-between rounded hover:-translate-y-1 w-80 transition-all duration-300 border border-l-4 border-flare border-r-0 border-y-0 p-4 shadow-2xl"
+        >
+          <div
+            class="bg-flare font-bold h-8 w-8 rounded-full flex items-center justify-center text-background text-lg"
+          >
+            4
+          </div>
+          <div>
+            <h3 class="text-lg font-bold">Local SEO</h3>
+            <p class="text-xs text-flare-dark">
+              Help local customers find you.
+            </p>
+          </div>
+          <ion-icon name="arrow-forward" class="cursor-pointer"></ion-icon>
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-center gap-2 mt-10">
+        <div class="w-fit p-2 rounded-2xl glass">
+          <img src="./public/logo.png" class="h-20" alt="" />
+        </div>
+        <h1 class="text-xl font-medium">
+          About Slate<span class="text-flare">Flare</span>
+        </h1>
+        <h3 class="lg:text-2xl font-bold text-text">
+          Built with purpose. Designed to perform.
+        </h3>
+        <p class="text-center text-lg max-lg:text-[10px]">
+          At Slate<span class="text-flare">Flare</span>, we create modern
+          websites that help businesses look credible, connect with their
+          customers, and generate more enquiries. No unnecessary complexity—just
+          thoughtful design, fast performance, and a clear focus on results.
+        </p>
+      </div>
+    </section>
+    <section
+      id="contact-us"
+      class="min-h-150 p-4 bg-flare text-text flex flex-col gap-6"
+    >
+      <div class="flex flex-col items-center justify-center gap6">
+        <h1 class="font-bold text-lg text-background">LET'S TALK</h1>
+        <h3 class="text-background text-sm">Have a project in mind?</h3>
+        <h3 class="text-background text-sm">
+          Let's build something that works.
+        </h3>
+      </div>
+      <div class="flex items-center justify-between flex-col lg:flex-row">
+        <div
+          class="w-full lg:w-[45%] h- rounded-xl p-4 flex flex-col items-start justify-center"
+        >
+          <h1 class="text-xl font-semibold">GET IN TOUCH</h1>
+          <div class="flex flex-col gap-2">
+            <div
+              class="flex items-center gap-2 text-sm justify-start bg-flare p-1 rounded border-l-2 border-background shadow-2xl"
+            >
+              <ion-icon
+                name="mail-outline"
+                class="text-xl text-slate"
+              ></ion-icon>
+              <p class="text-slate">hello@slateflare.com</p>
+            </div>
+            <div
+              class="flex items-center gap-2 text-sm justify-start bg-flare p-1 rounded border-l-2 border-background shadow-2xl"
+            >
+              <ion-icon
+                name="location-outline"
+                class="text-xl text-slate"
+              ></ion-icon>
+              <p>
+                BJB Nagar, Kalpana Square,<br />
+                Bhubaneswar, 751014
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full lg:w-[45%] glass p-6 flex flex-col items-center justify-center rounded-2xl"
+        >
+          <h1 class="text-xl font-bold text-flare-dark">START A PROJECT</h1>
+          <form action="" class="flex flex-col p-4 gap-2 w-full">
+            <input
+              type="text"
+              placeholder="Name"
+              required
+              class="w-full border border-flare rounded text-text px-2 py-1 h-8 bg-background shadow-none focus:outline-none focus:border focus:border-flare-dark focus:shadow-flare"
+            />
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="E-mail"
+              required
+              class="w-full border border-flare rounded text-text px-2 py-1 h-8 bg-background shadow-none focus:outline-none focus:border focus:border-flare-dark focus:shadow-flare"
+            />
+
+            <input
+              type="tel"
+              name=""
+              id=""
+              placeholder="Number"
+              required
+              class="w-full border border-flare rounded text-text px-2 py-1 h-8 bg-background shadow-none focus:outline-none focus:border focus:border-flare-dark focus:shadow-flare"
+            />
+            <select
+              class="w-full border border-flare rounded text-text px-2 py-1 h-8 bg-background shadow-none invalid:text-[#999]"
+              name=""
+              id=""
+              required
+            >
+              <option value="" disabled selected hidden>Interested in</option>
+              <option value="nails">Website Design</option>
+              <option value="binding-wire">Local SEO</option>
+              <option value="chainlink-fence">Landing Page</option>
+              <option value="all">Business Website</option>
+            </select>
+
+            <textarea
+              name=""
+              id=""
+              placeholder="Enter short description..."
+              rows="5"
+              class="w-full border border-flare rounded text-text px-2 py-1 h-30 bg-background shadow-none resize-none focus:outline-none focus:border focus:border-flare-dark focus:shadow-flare"
+            ></textarea>
+            <button class="bg-slate text-background h-8 rounded py-1">
+              Send Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-slate min-h-20 flex flex-col items-center justify-around">
+      <div class="flex items-center justify-center gap-4">
+        <a href="#"
+          ><ion-icon name="logo-x" class="text-xl text-background"></ion-icon
+        ></a>
+        <a href="#"
+          ><ion-icon
+            name="logo-instagram"
+            class="text-xl text-background"
+          ></ion-icon
+        ></a>
+        <a href="#"
+          ><ion-icon
+            name="logo-youtube"
+            class="text-xl text-background"
+          ></ion-icon
+        ></a>
+      </div>
+      <div class="copyright">
+        <p class="text-background">
+          © 2026 Slate<span class="text-flare">Flare</span> Technology | All
+          rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const dropdownMenu = document.querySelector(".dropdown-menu");
+
+      const toggleMenu = (e) => {
+        e.name = e.name === "menu" ? "close" : "menu";
+
+        dropdownMenu.classList.toggle("opacity-0");
+        dropdownMenu.classList.toggle("invisible");
+        dropdownMenu.classList.toggle("-translate-y-4");
+      };
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

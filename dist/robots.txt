@@ -1,0 +1,10 @@
+
+User-agent: *
+Allow: /
+
+Disallow: /thank-you/
+Disallow: /terms/
+Disallow: /privacy/
+
+Sitemap: https://slateflare.com/sitemap.xml
+
